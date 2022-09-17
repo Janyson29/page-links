@@ -9,11 +9,11 @@ ul {
 }
 
 body {
-    background-image: url(/assets/img/modern-futuristic-sci-fi-background.jpg);
+    background-image: url(/assets/img/sky-full-of-stars-and-silhouettes-of-trees-below.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #121214;
+    background-color: #000000; /*#121214*/
 }
 
 body * {
@@ -30,7 +30,7 @@ header {
 header div{
     width: 120px;
     margin: auto;
-    background-image: linear-gradient(90deg, #9572fc, #4de7ad 50.52%, #e2d45c 100% );
+    background-image: linear-gradient(90deg, #3fd2ff, #acf6fb 50%, #dbf6f9 100% );
     border-radius: 50%;
     display: flex;
     padding: 4px;
@@ -57,13 +57,13 @@ main {
 
 section {
     color: white;
-    background-image: linear-gradient(90deg, #9572fc, #4de7ad 50.52%, #e2d45c 100% );
+    background-image: linear-gradient(90deg, #ffffff5e, #ffffff4d 50.52%, #ffffff4c 100% );
     padding-top: 4px;
     border-radius: 10px;
 }
 
 section div {
-    background-color: #2A2634;
+    background-color: rgba(0, 0, 0, 0.437) ; /*#2A2634;*/
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
@@ -93,6 +93,11 @@ ul {
     margin-top: 24px;
 }
 
+.animes_list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
 .games_list img {
     width: 90px;
     border-radius: 8px;
@@ -102,6 +107,14 @@ ul {
     border-radius: 50%;
     width: 70px;
     border: 1 solid #443e54;
+}
+
+svg {
+    display: inline-block;
+    font-size: inherit;
+    height: 32px;
+    overflow: visible;
+    /*vertical-align: auto;*/
 }
 
 /*animetion*/
@@ -124,6 +137,10 @@ main section:nth-child(2) {
 
 main section:nth-child(3) {
     animation-delay: 2s;
+}
+
+main section:nth-child(4) {
+    animation-delay: 3s;
 }
 
 @keyframes fromTop {
